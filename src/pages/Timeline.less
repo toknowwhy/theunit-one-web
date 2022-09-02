@@ -1,0 +1,86 @@
+@import '../global.less';
+
+.title {
+  font-family: @dabacus-font-heavy;
+  font-size: 36px;
+  line-height: 36px;
+  margin-top: 88px;
+  margin-bottom: 120px;
+}
+
+.bgdImage {
+  height: 66px;
+  width: 100%;
+}
+
+.events {
+  .indicator {
+    position: absolute;
+    width: 43px;
+    height: 248px;
+    left: 36%;
+  }
+
+  .allEvents {
+    margin-left: 48%;
+    text-align: left;
+
+    h2 {
+      font-family: @dabacus-font-heavy;
+      font-size: 22px;
+      color: @theme-color;
+      width: 230px;
+    }
+
+    p {
+      font-family: @dabacus-font-medium;
+      width: 277px;
+      margin-top: 0;
+      margin-bottom: 16px;
+      position: relative;
+      padding-left: 12px;
+
+      &::before {
+        content: '\A';
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: @text-color;
+        position: absolute;
+        top: 7px;
+        left: 0;
+      }
+    }
+  }
+}
+
+.events,
+.empty {
+  height: 220px;
+}
+
+.dot {
+  color: @theme-gray;
+  cursor: pointer;
+  margin: 120px 30px;
+  display: inline-block;
+  font-family: @dabacus-font-heavy;
+
+  &.active {
+    color: @text-color;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .events {
+    .indicator {
+      bottom: 0;
+      left: 12%;
+    }
+
+    .allEvents {
+      margin-left: 24%;
+      padding-top: 44px;
+    }
+  }
+}

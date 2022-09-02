@@ -1,0 +1,25 @@
+@import '../../global.less';
+
+.footer {
+  padding: 40px;
+  z-index: 99;
+  position: relative;
+
+  .footerTitle {
+    font-family: @dabacus-font-medium;
+    margin-bottom: 8px;
+  }
+
+  .footerLink {
+    display: block;
+    color: @text-color;
+    margin: 8px 0;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .linkCol {
+    margin-bottom: 32px;
+  }
+}

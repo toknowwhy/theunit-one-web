@@ -1,0 +1,64 @@
+@import '../global.less';
+
+.faq-title {
+  font-family: @dabacus-font-heavy;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 38px;
+}
+
+.faqs {
+  &.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+
+    img {
+      float: right;
+      margin-top: 7px;
+      margin-right: 15px;
+    }
+  }
+
+  &.ant-collapse > .ant-collapse-item {
+    margin-bottom: 40px;
+  }
+
+  &.ant-collapse > .ant-collapse-item {
+    border-bottom: none;
+  }
+
+  &.ant-collapse {
+    border: none;
+    background-color: transparent;
+  }
+
+  &.ant-collapse .ant-collapse-content {
+    border-top: none;
+    font-family: @dabacus-font-medium;
+
+    .ant-collapse-content-box {
+      width: 80%;
+    }
+  }
+
+  &.ant-collapse
+    > .ant-collapse-item.ant-collapse-item-active
+    > .ant-collapse-header,
+  &.ant-collapse .ant-collapse-content,
+  &.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    background: rgb(10 10 10 / 40%);
+    backdrop-filter: blur(8px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .faqs {
+    &.ant-collapse .ant-collapse-content {
+      .ant-collapse-content-box {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import '../../global.less';
+
+.logoWrapper {
+  line-height: 32px;
+  font-size: 24px;
+  float: left;
+  padding: 15px;
+
+  .logoImg {
+    width: 32px;
+    margin-top: -6px;
+    margin-right: 15px;
+  }
+}
+
+.pageMenu {
+  justify-content: end;
+}
+
+.logoText {
+  color: #fff;
+}
+
+.header {
+  text-align: right;
+}
+
+.topMenu {
+  background: none;
+  height: 64px;
+  padding: 0 48px 0 32px;
+}
+
+.enterAppLink {
+  background: #1d1d1f;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 10px 16px;
+}
+
+.menuIconWrapper {
+  text-align: right;
+
+  img {
+    width: 32px;
+  }
+}
+
+.mobileMenu {
+  width: 272px;
+}
+
+.mobileMenuWrapper {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .topMenu {
+    padding: 0;
+  }
+
+  .pageMenu {
+    display: none;
+  }
+
+  .mobileMenuWrapper {
+    float: right;
+    display: block;
+  }
+}

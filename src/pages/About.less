@@ -1,0 +1,45 @@
+@import '../global.less';
+
+.title {
+  font-family: @dabacus-font-heavy;
+  font-size: 36px;
+  line-height: 36px;
+  margin-top: 88px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.aboutTitle {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 98px;
+  width: 100%;
+  max-width: 590px;
+}
+
+.aboutBody {
+  background: rgb(10 10 10 / 40%);
+  backdrop-filter: blur(8px);
+  padding: 80px 120px;
+  width: 100%;
+  max-width: 850px;
+}
+
+.aboutImg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 486px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutTitle {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .aboutBody {
+    padding: 32px 0;
+  }
+}

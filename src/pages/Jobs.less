@@ -1,0 +1,68 @@
+@import '../global.less';
+
+.title,
+.pageTitle {
+  font-family: @dabacus-font-heavy;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.pageTitle {
+  margin: 88px 0;
+}
+
+.featureTitle,
+.jobTitle {
+  font-family: @dabacus-font-medium;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.jobTitle {
+  margin-top: 60px;
+}
+
+.featureDesc {
+  font-family: @dabacus-font-medium;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.feature {
+  padding: 18px 28px;
+
+  .featureWrapper {
+    padding: 64px;
+    background: rgb(10 10 10 / 20%);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    min-height: 268px;
+    margin-bottom: 15px;
+
+    &:hover {
+      box-shadow: 0 0 16px 1px rgb(19 27 105 / 8%);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}
+
+.jobBody {
+  max-width: 824px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 991px) {
+  .feature {
+    padding: 0;
+
+    .featureWrapper {
+      padding: 32px;
+      min-height: 200px;
+    }
+  }
+
+  .jobBody {
+    max-width: 100%;
+  }
+}
