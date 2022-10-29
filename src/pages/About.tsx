@@ -26,7 +26,7 @@ export default (): React.ReactNode => {
               unbiased measure of value makes it a prime candidate to take on
               the new era. We envision a future in which we cease to depend on
               central bank fiat money to exchange value as value becomes
-              increasingly more decentralized and disintermediated. set.
+              increasingly more decentralized and disintermediated.
               <br />
               <br />
               UNIT is a benchmark that serves two purposes. First, it serves as
